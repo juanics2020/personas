@@ -6,12 +6,15 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+//Importamos el módulo. En la documentación de cada clase viene
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule, //la añadimos el módulo de http client
     HomePageRoutingModule
   ],
   declarations: [HomePage]
